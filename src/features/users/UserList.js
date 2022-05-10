@@ -39,9 +39,10 @@ const UserList = () => {
 
 	return (
 		<div>
-			<Link to={'/add-users'}>
-				<Button>Add user</Button>
-			</Link>
+			<Button>
+				<Link to={'/add-users'}> Add user</Link>
+			</Button>
+
 			<div className='grid gap-5 md:grid-cols-2'>
 				{users.length ? (
 					renderCard()

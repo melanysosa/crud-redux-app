@@ -2,14 +2,13 @@ import React from 'react';
 
 const TextField = ({ label, inputProps, onChange, value }) => {
 	return (
-		<div className='flex flex-col my-2'>
-			<label className='mb-2 text-base text-gray-800'>{label}</label>
+		<div className='flex flex-col '>
+			<label className='mb-2  font-bold text-gray-700'>{label}</label>
 			<input
-				className='bg-gray-200 py-2 px-3 border-2 outline-none '
+				className='bg-black/70 py-2 px-3 border-2 outline-none rounded-full text-white '
 				{...inputProps}
 				onChange={onChange}
 				value={value}
-				required
 			/>
 		</div>
 	);
